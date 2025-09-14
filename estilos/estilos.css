@@ -16,3 +16,14 @@ button{
     justify-content: center;
     margin-top: 30px;
 }
+
+body{
+    background-color: (#F8F8F8);
+}
+
+
+.navegacion{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
