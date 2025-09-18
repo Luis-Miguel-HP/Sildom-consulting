@@ -1,5 +1,9 @@
 html{
     box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
     
 }
 
@@ -26,4 +30,32 @@ body{
     display: flex;
     gap: 10px;
     align-items: center;
+}
+
+
+
+/* Hover de nav */
+
+a{
+    position: relative;
+    display: inline;
+    
+}
+a::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    bottom: -5px;
+    transform: scaleX(0);
+    left: 0;
+     transform-origin: right;
+     transition: transform 0.4s ease-out;
+
+    }
+
+a:hover::after {
+    transform: scaleX(1); 
+    transform-origin: left;
 }
